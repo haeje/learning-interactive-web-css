@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box-container{
+            display: flex;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background: rgba(255, 255, 0, 0.7);
+
+            
+        }
+        .scale .box:hover{
+            transform: scale(2);
+        }
+
+        .rotate .box:hover{
+            transform: rotate(15deg);
+        }
+
+        .skew .box:hover{
+            transform: skew(15deg, 50deg)
+        }
+
+        .translate .box:hover{
+            transform: translate(30px, 10px);
+        }
+
+        .origin .box:hover{
+            transform: scale(2);
+            transform-origin: 10% 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Transform</h1>
+    <p>
+        변형에 관한 속성, 크기조정, 회전, 비틀기, 3D
+        하드웨어 가속을 사용(gpu)하기 때문에 성능이 좋음. 네이티브앱 수준의 성능
+    </p>
+
+
+
+    <p>transform : scale() 기준점 디폴트 중앙으로 확장/축소시킨다.</p>
+    <div class="box-container scale">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+    <p>transform : rotate(15deg) 360도 기준 15도 회전시킨다.</p>
+    <div class="box-container rotate">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+
+    <p>transform : skew(15deg) 360도 기준 15도 비틀어서 보여준다.</p>
+    <div class="box-container skew">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+    <p>transform: translate(30px, 10px) 가로 30px, 세로 10px 이동시킨다</p>
+    <div class="box-container translate">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+    <p>transform-origin: left top; 기준점을 좌상단으로 변경한다. transform-origin: 0% 0% 표현 가능</p>
+    <div class="box-container origin">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+
+    <p>As you may have noticed, we has overgone several changes this year.</p>
+    <p>With our one and only Serina back on the program, We has become stronger than ever.</p>
+    <p>We can't thank you enough your love and support you have shown</p>
+    <p>We promise we will not let you down in the upcoming year with great content on the way.</p>
+    <p>We ask you to always motivated and stay this place.</p>
+
+</body>
+</html>
